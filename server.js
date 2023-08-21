@@ -31,7 +31,7 @@ app.use("/api/employees", employeesRouter);
 app.use("/api/customers", customersRouter);
 app.use("/api/login", loginRouter);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log("Server Started listening to port " + PORT);
 });
