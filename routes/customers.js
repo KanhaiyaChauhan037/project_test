@@ -11,7 +11,7 @@ const { Transform, pipeline } = require("stream");
 const Excel = require("exceljs");
 const { Writable } = require("stream");
 const Papa = require("papaparse");
-const { Readable } = require("stream");
+const { Readable } = require("node:stream");
 
 const uploadFolder = "./uploads";
 if (!fs.existsSync(uploadFolder)) {
