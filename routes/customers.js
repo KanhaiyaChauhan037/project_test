@@ -149,7 +149,7 @@ router.post(
           if (err) {
             // console.log("Pipeline failed with an error:", err);
           } else {
-            console.log("Pipeline ended successfully");
+            // console.log("Pipeline ended successfully");
             fs.rmSync(file.path);
             return res.json("Added Customer successfully");
           }
@@ -216,7 +216,7 @@ router.post(
 
         try {
           fs.rmSync(file.path);
-          console.log("Pipeline ended successfully");
+          // console.log("Pipeline ended successfully");
           return res.json("Added Customer successfully");
         } catch (err) {
           console.error("An error occurred:", err);
